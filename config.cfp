@@ -1,0 +1,13 @@
+enable
+configure terminal
+
+interface range GigabitEthernet0/1 - 2
+  channel-group 1 mode active
+  no shutdown
+exit
+
+interface Port-channel1
+  description EtherChannel Link using LACP
+  switchport mode trunk
+  switchport trunk allowed vlan 10,20,30
+exit
