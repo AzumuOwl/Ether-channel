@@ -34,7 +34,7 @@
 - Switch A: Ethernet 0/0, 0/1
 - Switch B: Ethernet 0/0, 0/1
 
-|Switch A |                     | Switch B|
+|Switch A |         UTP            | Switch B|
 | -----|------------------------|----- |
 |e0/0 | ---------------------   | e0/0 |
 |e0/1 | ---------------------   | e0/1|
