@@ -1,13 +1,14 @@
 enable
 configure terminal
 
-interface range GigabitEthernet0/1 - 2
-  channel-group 1 mode active       ! ใช้ LACP เช่นกัน
+interface range e0/0 - 1
+  channel-group 1 mode desirable
   no shutdown
 exit
 
 interface Port-channel1
   description Link to Switch A
+  switchport trunk encapsulation dot1q
   switchport mode trunk
   switchport trunk allowed vlan 10,20,30
 exit
